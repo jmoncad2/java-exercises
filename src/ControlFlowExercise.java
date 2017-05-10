@@ -10,7 +10,7 @@ public class ControlFlowExercise {
 
         Scanner input = new Scanner(System.in);
 
-        String yesNo = "Y";
+        String yesNo = "y";
 
 //        // Counts by 1 until it is 15 but starts from number 5
 //        int first = 5;
@@ -55,36 +55,44 @@ public class ControlFlowExercise {
 //                System.out.println("Buzz");
 //            } else System.out.println(test);
 //        }
-//        // Squared and Cubed table
-//        System.out.println("Please enter a number between 1 and 9.");
-//        int number = input.nextInt();
-//        System.out.println("Here is your table up too the number " + number + ".");
-//        System.out.println(" ");
-//        System.out.println("Number | Squared | Cubed");
-//        System.out.println("------ | ------- | -----");
-//        for(int rows = 0; rows <= number; rows++){
-//            if(Math.pow(rows, 2) <= 9) {
-//                System.out.printf("%d      | %.0f       | %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
-//            } else {
-//                System.out.printf("%d      | %.0f      | %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
-//            }
-//        }
+        // Squared and Cubed table
+        do {
+            System.out.println("Please enter a number between 1 and 9.");
+            int number = input.nextInt();
+            System.out.println("Here is your table up too the number " + number + ".");
+            System.out.println(" ");
+            System.out.println("Number | Squared | Cubed");
+            System.out.println("------ | ------- | -----");
+            for (int rows = 0; rows <= number; rows++) {
+                if (Math.pow(rows, 2) <= 9) {
+                    System.out.printf("%d      | %.0f       | %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
+                } else {
+                    System.out.printf("%d      | %.0f      | %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
+                }
+            }
+                System.out.println("Would you like to continue with another number?(Y/N)");
+                yesNo = input.next();
+        } while (!yesNo.equals("n"));
+        System.out.println("Ok lets stop");
         // Grade Conversion table
+        do {
         System.out.println("Please enter student grade between 0 and 100.");
         int grade = input.nextInt();
-        if (grade <= 60){
-            System.out.println(grade + " = F");
-        } else if ((grade >= 61) && (grade <= 66)){
-            System.out.println(grade + " = D");
-        } else if ((grade >= 67) && (grade <= 79)){
-            System.out.println(grade + " = C");
-        } else if ((grade >= 80) && (grade <=87)){
-            System.out.println(grade + " = B");
-        } else if((grade >= 88) && (grade <= 100)){
-            System.out.println(grade + " = A");
-        } else System.out.println("That's a SUPPA!!! student");
-        System.out.println("Would you like to continue with another grade?(Y/N)");
-//        if (yesNo.toLowerCase())
+            if (grade <= 60) {
+                System.out.println(grade + " = F");
+            } else if ((grade >= 61) && (grade <= 66)) {
+                System.out.println(grade + " = D");
+            } else if ((grade >= 67) && (grade <= 79)) {
+                System.out.println(grade + " = C");
+            } else if ((grade >= 80) && (grade <= 87)) {
+                System.out.println(grade + " = B");
+            } else if ((grade >= 88) && (grade <= 100)) {
+                System.out.println(grade + " = A");
+            } else System.out.println("That's a SUPPA!!! student");
+            System.out.println("Would you like to continue with another grade?(Y/N)");
+            yesNo = input.next();
+        } while(!yesNo.equals("n"));
+        System.out.println("Ok lets stop");
 
 
 
