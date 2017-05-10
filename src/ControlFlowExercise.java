@@ -10,6 +10,8 @@ public class ControlFlowExercise {
 
         Scanner input = new Scanner(System.in);
 
+        String yesNo = "Y";
+
 //        // Counts by 1 until it is 15 but starts from number 5
 //        int first = 5;
 //
@@ -68,26 +70,21 @@ public class ControlFlowExercise {
 //            }
 //        }
         // Grade Conversion table
-        System.out.println("Please enter a number between 0 and 100.");
+        System.out.println("Please enter student grade between 0 and 100.");
         int grade = input.nextInt();
-        System.out.println("Let me convert " + grade + " for you.");
         if (grade <= 60){
-            System.out.println(" ");
             System.out.println(grade + " = F");
         } else if ((grade >= 61) && (grade <= 66)){
-            System.out.println(" ");
             System.out.println(grade + " = D");
         } else if ((grade >= 67) && (grade <= 79)){
-            System.out.println(" ");
             System.out.println(grade + " = C");
         } else if ((grade >= 80) && (grade <=87)){
-            System.out.println(" ");
             System.out.println(grade + " = B");
         } else if((grade >= 88) && (grade <= 100)){
-            System.out.println(" ");
             System.out.println(grade + " = A");
-        } else System.out.println("Invalid Number");
-
+        } else System.out.println("That's a SUPPA!!! student");
+        System.out.println("Would you like to continue with another grade?(Y/N)");
+//        if (yesNo.toLowerCase())
 
 
 
