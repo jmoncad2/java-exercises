@@ -57,21 +57,21 @@ public class ControlFlowExercise {
 //            } else System.out.println(test);
 //        }
         // Squared and Cubed table
-        do {
-            System.out.println("Please enter a number between 1 and 9.");
-            int number = input.nextInt();
-            System.out.println("Here is your table up too the number " + number + ".");
-            System.out.println(" ");
-            System.out.println("Number | Squared | Cubed");
-            System.out.println("------ | ------- | -----");
-            for (int rows = 0; rows <= number; rows++) {
-                // Padding is % [-7]d : negative number between % sign and "d" letter will give me the spacing i want.
-                System.out.printf("%-7d| %-8s| %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
-            }
-                System.out.println("Would you like to continue with another number?(Y/N)");
-                yesNo = input.next();
-        } while (yesNo.equalsIgnoreCase("n"));
-        System.out.println("Ok lets stop");
+//        do {
+//            System.out.println("Please enter a number between 1 and 9.");
+//            int number = input.nextInt();
+//            System.out.println("Here is your table up too the number " + number + ".");
+//            System.out.println(" ");
+//            System.out.println("Number | Squared | Cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int rows = 0; rows <= number; rows++) {
+//                // Padding is % [-7]d : negative number between % sign and "d" letter will give me the spacing i want.
+//                System.out.printf("%-7d| %-8s| %.0f\n", rows, Math.pow(rows, 2), Math.pow(rows, 3));
+//            }
+//                System.out.println("Would you like to continue with another number?(Y/N)");
+//                yesNo = input.next();
+//        } while (yesNo.equalsIgnoreCase("n"));
+//        System.out.println("Ok lets stop");
 //        // Grade Conversion table
 //        do {
 //        System.out.println("Please enter student grade between 0 and 100.");
@@ -91,29 +91,29 @@ public class ControlFlowExercise {
 //            yesNo = input.next();
 //        } while(!yesNo.equals("n"));
 //        System.out.println("Ok lets stop");
-        // Extra credit problem
-//        do {
-//            System.out.println("Please enter user number between 0 and 100.");
-//            int user = input.nextInt();
-//            for (int factor = 2; factor <= user; factor++) {
-//                while (user % factor == 0) {
-////                    System.out.println(factor + "| " + user);
-////                    System.out.println("---------");
-//                    if (factor == 3) {
-//                        System.out.println("Pling");
-//                    } else if (factor == 5) {
-//                        System.out.println("Plang");
-//                    } else if (factor == 7) {
-//                        System.out.println("Plong");
-//                    }
-////                    else System.out.println(user);
-//                    user = user / factor;
-//                }
-//            }
-//            System.out.println("Would you like to continue with another number?(Y/N");
-//            yesNo = input.next();
-//        } while (!yesNo.equals("n"));
-//        System.out.println("Ok lets stop");
+         //Extra credit problem
+        do {
+            System.out.println("Please enter user number between 0 and 100.");
+            int user = input.nextInt();
+            for (int factor = 2; factor <= user; factor++) {
+                while (user % factor == 0) {
+//                    System.out.println(factor + "| " + user);
+//                    System.out.println("---------");
+                    if (factor == 3) {
+                        System.out.println("Pling");
+                    } else if (factor == 5) {
+                        System.out.println("Plang");
+                    } else if (factor == 7) {
+                        System.out.println("Plong");
+                    }
+//                    else System.out.println(user);
+                    user = user / factor;
+                }
+            }
+            System.out.println("Would you like to continue with another number?(Y/N");
+            yesNo = input.next();
+        } while (!yesNo.equalsIgnoreCase("n"));
+        System.out.println("Ok lets stop");
 
 
     }
