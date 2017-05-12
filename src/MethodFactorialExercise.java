@@ -8,15 +8,9 @@ import java.util.Scanner;
 public class MethodFactorialExercise {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String yesNo = "y";
-
-        int y, z;
-        System.out.println("FACTORIAL TIME!!!, enter a number to get your results");
-        y = input.nextInt();
-        for (int x = y; x <=1; x--){
-            z = y * (y-1);
-            System.out.println(x + "! = " + y + " = " + z);
-        }
+        String yesNo;
+        long total = factorial(input);
+        System.out.println("total " + total);
         System.out.println("Would you like to continue? (Y,N)");
         yesNo = input.next();
         if (yesNo.equalsIgnoreCase("y")) {
@@ -24,10 +18,14 @@ public class MethodFactorialExercise {
         }
     }
 
-//    public static int factorial(int factorial1) {
-//
-//        int z = factorial1 * (factorial1 - 1);
-//        return z;
-//    }
+    public static long factorial(Scanner input) {
+        System.out.println("FACTORIAL TIME!!!, enter a number to get your results");
+        int factorial = input.nextInt();
+        int total = factorial;
+        for(int i = factorial; i > 1; i--){
+            total *= i - 1;
+        }
+        return total;
+    }
 
 }
