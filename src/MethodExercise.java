@@ -25,6 +25,9 @@ public class MethodExercise {
         int divResult = division(x, y);
         System.out.println("Here is your division results: " + divResult);
 
+        int modResult = modulus(x, y);
+        System.out.println("Here is your modulus results " + modResult);
+
     }
     // Subtraction
     public static Integer subtraction(int number1, int number2){
@@ -42,7 +45,10 @@ public class MethodExercise {
         int z = div1 / div2;
         return z;
     }
-
-
+    // Modulus
+    public static Integer modulus(int mod1, int mod2){
+        int z = mod1 % mod2;
+        return z;
+    }
 
 }
