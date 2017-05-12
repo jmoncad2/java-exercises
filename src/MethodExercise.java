@@ -7,10 +7,12 @@ import java.util.Scanner;
 public class MethodExercise {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String yesNo = "y";
 
         int x, y, z;
-        System.out.println("Please enter two numbers.");
-        Scanner input = new Scanner(System.in);
+        System.out.println("Magic Box of wonders, enter 2 numbers to get:");
+        System.out.println("Addition, Subtraction, Multiplication, Division, Modulus, and Average");
         x = input.nextInt();
         y = input.nextInt();
         z = x + y;
@@ -28,27 +30,45 @@ public class MethodExercise {
         int modResult = modulus(x, y);
         System.out.println("Here is your modulus results " + modResult);
 
+        int avgResult = average(x, y);
+        System.out.println("Here is your average result " + avgResult);
+        System.out.println("Would you like to continue? (Y,N)");
+        yesNo = input.next();
+        if(yesNo.equalsIgnoreCase("y")){
+            main(args);
+        }
+
     }
+
     // Subtraction
-    public static Integer subtraction(int number1, int number2){
+    public static int subtraction(int number1, int number2) {
 
         int z = number1 - number2;
         return z;
     }
+
     // Multiplication
-    public static Integer multiplication(int multi1, int multi2){
+    public static int multiplication(int multi1, int multi2) {
         int z = multi1 * multi2;
         return z;
     }
+
     // Division
-    public static Integer division(int div1, int div2){
+    public static int division(int div1, int div2) {
         int z = div1 / div2;
         return z;
     }
+
     // Modulus
-    public static Integer modulus(int mod1, int mod2){
+    public static int modulus(int mod1, int mod2) {
         int z = mod1 % mod2;
         return z;
+    }
+
+    // Average min and max
+    public static int average(int min, int max) {
+            int z = (min + max) / 2;
+            return z;
     }
 
 }
