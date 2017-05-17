@@ -7,26 +7,26 @@ package JAVA;
 public class InputTest {
 
     public static void main(String[] args) {
+        Input entry = new Input();
 
-        Input userInput = new Input();
-        Input userYesNo = new Input();
-        Input userInt = new Input();
-        Input userDouble = new Input();
 
         do {
             System.out.println("Whats your name");
-            System.out.println("Welcome " + userInput.getString());
+            System.out.println("Welcome " + entry.getString());
             System.out.println("Do you like rain?(Y/N)");
-            userYesNo.yesNo();
+            entry.yesNo();
             System.out.println("Me too");
             System.out.println("Enter your favorite number");
-            userInt.getInt();
+            entry.getInt();
             System.out.println("That's my favorite too");
-            System.out.println("If I have $8.43 and I lose $1.21, how much do I have left?");
-            userDouble.getDouble();
+            System.out.println("If I have 8.43 and I lose 1.21, how much do I have left?");
+            entry.getDouble();
             System.out.println("Thats right");
+            System.out.println("Enter number between 1 and 10");
+            entry.getInt(1,10);
+            System.out.println("Cool");
             System.out.println("Do you wanna retry?(Y/N)");
-        } while(userInput.yesNo());
+        } while(entry.yesNo());
     }
 
 }
