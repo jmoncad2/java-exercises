@@ -19,7 +19,7 @@ public class MethodDiceExercise {
     public static int diceRoll(Scanner input) {
         System.out.println("Lets dice roll, enter a number that will be the number of sides in each dice");
         int sides = input.nextInt();
-        int total;
+        int total = 0;
 
 
         return total;
