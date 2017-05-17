@@ -13,7 +13,8 @@ public class Person {
         return name;
     }
     // changes the name property to the passed value
-    public void setName(){
+    public void setName(String name){
+        this.name = name;
     }
     // prints a message to the console using the person's name
     public void sayHello(){
