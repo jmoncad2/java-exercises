@@ -32,9 +32,9 @@ public class JavaServer {
                 "purpose",
         };
 
+        do {
         String randomAdj = adj[(int)(Math.random() * adj.length)];
         String randomNoun = noun[(int)(Math.random() * noun.length)];
-        do {
             System.out.println(" ");
             System.out.println("Random server name is " + randomAdj + randomNoun);
             System.out.println("Would you like another name?(Y/N)");
