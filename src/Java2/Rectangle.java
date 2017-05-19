@@ -34,11 +34,13 @@ class Square extends Rectangle {
 
     // Overload is when you have 2 methods with different parameters
     // Override is when you have 2 methods with the same parameters
+    @Override
     public int getArea(){
         int area = side * side;
         return area;
     }
 
+    @Override
     public int getPerimeter(){
         int perimeter = 4 * side;
         return perimeter;
