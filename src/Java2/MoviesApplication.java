@@ -1,4 +1,4 @@
-package JAVA;
+package Java2;
 
 
 public class MoviesApplication {

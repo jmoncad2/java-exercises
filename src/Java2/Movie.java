@@ -1,6 +1,4 @@
-package JAVA;
-
-import java.util.Arrays;
+package Java2;
 
 public class Movie {
     private String name;

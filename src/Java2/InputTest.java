@@ -1,4 +1,6 @@
-package JAVA;
+package Java2;
+
+import Java2.Input;
 
 /**
  * Created by

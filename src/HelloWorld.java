@@ -1,5 +1,5 @@
 
-public class HelloWorldAgain {
+public class HelloWorld {
     // psvm (enter)
     public static void main(String[] args) {
         // sout (enter)
